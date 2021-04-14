@@ -1,0 +1,6 @@
+                sepal_width                                              
+                      count   mean       std  min    25%  50%    75%  max
+species                                                                  
+Iris-setosa            50.0  3.418  0.381024  2.3  3.125  3.4  3.675  4.4
+Iris-versicolor        50.0  2.770  0.313798  2.0  2.525  2.8  3.000  3.4
+Iris-virginica         50.0  2.974  0.322497  2.2  2.800  3.0  3.175  3.8

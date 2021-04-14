@@ -1,0 +1,6 @@
+                petal_length                                             
+                       count   mean       std  min  25%   50%    75%  max
+species                                                                  
+Iris-setosa             50.0  1.464  0.173511  1.0  1.4  1.50  1.575  1.9
+Iris-versicolor         50.0  4.260  0.469911  3.0  4.0  4.35  4.600  5.1
+Iris-virginica          50.0  5.552  0.551895  4.5  5.1  5.55  5.875  6.9
