@@ -2,14 +2,14 @@
 
 Iris Fisher Data Set Overview
 ---
-<p> The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper <e/m>"The use of multiple measurements in taxonomic problems"<e/m>. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; <e/m> Iris setosa, Iris viginica, Iris versicolor<e/m>. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.<p>
+<p> The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.<p>
 
 <p> The dataset contains 150 records under 5 characteristics:
 1.  Sepal length (cm)
 2.  Sepal width (cm)
 3.  Petal leghth (cm)
 4.  Petal width (cm)
-5.  Species: <e/m> Iris setosa, Iris versicolor, Iris virginica<e/m>
+5.  Species: *Iris setosa, Iris versicolor, Iris virginica*
 
 ![alt text](https://miro.medium.com/fit/c/1838/551/0*Uw37vrrKzeEWahdB)
 Image displaying the three species of Iris: *Iris versicolor, Iris setosa, Iris virginica*
@@ -138,9 +138,14 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
 
 ### Visualisation of the Dataset
 #### Histograms
-
-
+##### Distribution of Petal Length
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Length.png?raw=true)
+##### Distribution of Petal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Width.png?raw=true)
+##### Distribution of Sepal Length
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Sepal%20Length.png?raw=true)
+##### Distribution of Sepal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Sepal%20Width.png?raw=true)
 
 References:
 data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv
