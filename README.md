@@ -140,7 +140,7 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
 #### Histograms
 
 
-![Alt text](https://github.com/SaidhbhFoley/IrisFisher)
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Length.png?raw=true)
 
 References:
 data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv
