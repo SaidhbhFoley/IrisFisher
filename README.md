@@ -12,7 +12,7 @@ Iris Fisher Data Set Overview
 5.  Species: <e/m> Iris setosa, Iris versicolor, Iris virginica<e/m>
 
 ![alt text](https://miro.medium.com/fit/c/1838/551/0*Uw37vrrKzeEWahdB)
-Image displaying the three species of Iris: <e/m> Iris versicolor, Iris setosa, Iris virginica<e/m>
+Image displaying the three species of Iris: *Iris versicolor, Iris setosa, Iris virginica*
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.<p>
 
@@ -140,7 +140,7 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
 #### Histograms
 
 
-![Alt text](Desktop/Programming/IrisFisher/Distribution of Petal Length.png)
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher)
 
 References:
 data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv
