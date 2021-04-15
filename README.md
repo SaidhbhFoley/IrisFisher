@@ -11,10 +11,8 @@ Iris Fisher Data Set Overview
 4.  Petal width (cm)
 5.  Species: <e/m> Iris setosa, Iris versicolor, Iris virginica<e/m>
 
-![alt text](https://i.ebayimg.com/images/g/PxUAAMXQwwlSAaCr/s-l300.jpg) iris setosa
-![alt text](https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg) iris virginica
-![alt text](hhttps://upload.wikimedia.org/wikipedia/commons/2/27/Blue_Flag%2C_Ottawa.jpg) iris versicolor
-
+![alt text](https://miro.medium.com/fit/c/1838/551/0*Uw37vrrKzeEWahdB)
+Image displaying the three species of Iris: <e/m> Iris versicolor, Iris setosa, Iris virginica<e/m>
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.<p>
 
@@ -95,6 +93,7 @@ This gave the following table
 
 Analysing the Dataset
 ---
+### Summary for Each Attribute
 Outputs a summary of each variable to a single text file. The code for this is displayed below:
 ```
 with open ('variable_summary.txt', 'wt') as f:
@@ -105,7 +104,7 @@ with open ('variable_summary.txt', 'wt') as f:
 ```
 This creates a text file named variable_summary.txt where 4 tables summarise sepal length, sepal width, petal length and petal width respectively. These tables are shown below
 
-### Sepal Length  
+#### Sepal Length  
 
 |Species            |Count   |Mean   |Std       |Min    |25%    |50%    |75%    |Max    |
 |---                |---     |---    |---       |---    |---    |---    |---    |---    |
@@ -114,7 +113,7 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
  Iris-virginica     |50.0    |6.588  |0.635880  |4.9    |6.2    |6.5    |6.9    |7.9    |
 
 
-### Sepal Width  
+#### Sepal Width  
 
 |Species             |Count   |Mean   |Std       |Min    |25%    |50%    |75%    |Max    |
 |---                 |---     |---    |---       |---    |---    |---    |---    |---    |
@@ -122,7 +121,7 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
  Iris-versicolor     |50.0    |2.770  |0.313798  |2.0    |2.5    |2.8    |3.0    |3.4    |
  Iris-virginica      |50.0    |2.974  |0.322497  |2.2    |2.8    |3.0    |3.1    |3.8    |
 
-### Petal Length
+#### Petal Length
 
 |Species             |Count   |Mean   |Std       |Min    |25%    |50%    |75%    |Max    |
 |---                 |---     |---    |---       |---    |---    |---    |---    |---    |
@@ -130,15 +129,18 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
  Iris-versicolor     |50.0    |4.260  |0.469911  |3.0    |4.0    |4.3    |4.6    |5.1    |
  Iris-virginica      |50.0    |5.552  |0.551895  |4.5    |5.1    |5.5    |5.8    |6.9    |
 
-### Petal Width
+#### Petal Width
 |Species             |Count   |Mean   |Std       |Min    |25%    |50%    |75%    |Max    |
 |---                 |---     |---    |---       |---    |---    |---    |---    |---    |
  Iris-setosa         |50.0    |0.244  |0.107210  |0.1    |0.2    |0.2    |0.3    |0.6    |
  Iris-versicolor     |50.0    |1.326  |0.197753  |1.0    |1.2    |1.3    |1.5    |1.8    |
  Iris-virginica      |50.0    |2.026  |0.274650  |1.4    |1.8    |2.0    |2.3    |2.5    |
 
+### Visualisation of the Dataset
+#### Histograms
 
 
+![Alt text](Desktop/Programming/IrisFisher/Distribution of Petal Length.png)
 
 References:
 data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv
