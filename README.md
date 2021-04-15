@@ -11,8 +11,16 @@ Iris Fisher Data Set Overview
 4.  Petal width (cm)
 5.  Species: *Iris setosa, Iris versicolor, Iris virginica*
 
-![alt text](https://miro.medium.com/fit/c/1838/551/0*Uw37vrrKzeEWahdB)
-Image displaying the three species of Iris: *Iris versicolor, Iris setosa, Iris virginica*
+<p> align="center">
+  <img width="460" height="300" src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
+</p>
+
+<div> class="images">
+   <img src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
+   <p>Iris species: *Iris versicolor, Iris setosa, Iris virginica*</p>
+</div>
+
+Iris species: *Iris versicolor, Iris setosa, Iris virginica*
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.<p>
 
@@ -138,8 +146,10 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
 
 ### Visualisation of the Dataset
 #### Histograms
+Histograms are the most commonly used graph to show frequency distributions. 
 ##### Distribution of Petal Length
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Length.png?raw=true)
+Plot 1: Attribute: Petal Length
 ##### Distribution of Petal Width
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Width.png?raw=true)
 ##### Distribution of Sepal Length
