@@ -16,7 +16,7 @@ Iris Fisher Data Set Overview
    <img src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
 </p>
 <p>
-   *Iris flower species*
+   _Iris flower species_
 </p>
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.</p>
