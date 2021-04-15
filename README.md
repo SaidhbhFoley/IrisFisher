@@ -2,7 +2,7 @@
 
 Iris Fisher Data Set Overview
 ---
-<p> The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.<p>
+<p> The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.</p>
 
 <p> The dataset contains 150 records under 5 characteristics:
 1.  Sepal length (cm)
@@ -10,15 +10,16 @@ Iris Fisher Data Set Overview
 3.  Petal leghth (cm)
 4.  Petal width (cm)
 5.  Species: *Iris setosa, Iris versicolor, Iris virginica*
+</p>
 
-<div>
+<p>
    <img src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
-   <p>Iris flower species</p>
-</div>
+</p>
+<p>
+   <em>Iris flower species<e/m>
+</p>
 
-Iris species: *Iris versicolor, Iris setosa, Iris virginica*
-
-<p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.<p>
+<p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.</p>
 
 Libraries Utilised
 ---
