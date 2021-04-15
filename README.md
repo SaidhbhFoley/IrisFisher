@@ -11,13 +11,9 @@ Iris Fisher Data Set Overview
 4.  Petal width (cm)
 5.  Species: *Iris setosa, Iris versicolor, Iris virginica*
 
-<p> align="center">
-  <img width="460" height="300" src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
-</p>
-
-<div> class="images">
+<div>
    <img src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
-   <p>Iris species: *Iris versicolor, Iris setosa, Iris virginica*</p>
+   <p>Iris flower species</p>
 </div>
 
 Iris species: *Iris versicolor, Iris setosa, Iris virginica*
