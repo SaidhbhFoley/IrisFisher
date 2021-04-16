@@ -2,21 +2,24 @@
 
 Iris Fisher Data Set Overview
 ---
-<p> The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.</p>
+The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.</p>
 
-<p> The dataset contains 150 records under 5 characteristics:
-1.  Sepal length (cm)
-2.  Sepal width (cm)
-3.  Petal leghth (cm)
-4.  Petal width (cm)
-5.  Species: *Iris setosa, Iris versicolor, Iris virginica*
-</p>
+The dataset contains 150 records under 5 characteristics:
++ Sepal length (cm)
++ Sepal width (cm)
++ Petal leghth (cm)
++ Petal width (cm)
++ Species: 
+    + *Iris setosa* 
+    + *Iris versicolor*
+    + *Iris virginica*
+
 
 <p>
    <img src="https://miro.medium.com/max/4800/0*QHogxF9l4hy0Xxub.png">
 </p>
-<p>
-   _Iris flower species_
+
+   *Iris flower species*
 </p>
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.</p>
@@ -57,13 +60,37 @@ The above code also renamed the column headings for user ease.
 The dataset was obtained from github and is included in the references.
 
 ### Researching the Dataset
-#### Size of the Dataset
+#### Size of the Dataset and Investigating Blanks
 The first step taken in researching this data set was to investigate the species and the size of the data set. This was using the code below:
 ```
-# Finding out the species/how many of each species there are
+# Exploring the dataset to obtain what species it contains and the number of data points for each species.
 iris_data['species'].unique()
 print(iris_data.groupby('species').size())
 ```
+
+```
+# Ensuring no blanks/missing data
+print(iris_data.info())
+```
+
+The above code prints:
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 150 entries, 0 to 149
+Data columns (total 5 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   sepal_length  150 non-null    float64
+ 1   sepal_width   150 non-null    float64
+ 2   petal_length  150 non-null    float64
+ 3   petal_width   150 non-null    float64
+ 4   species       150 non-null    object 
+dtypes: float64(4), object(1)
+memory usage: 6.0+ KB
+None
+```
+Showing that the dataset is complete and contains no blank entries or missing data.
+
 #### General Investigation of the Dataset
 Once this information had been obtained the next step was to generally investigate it by finding out the min, max, mean, median and the standard deviation of the dataset. This was done using the code below:
 
@@ -86,7 +113,7 @@ summary = summary.transpose()
 summary.head()
 print(summary)
 ```
-This gave the following table
+Which produces the following table, summarising the count, mean, standard deviation, min, interquartiles and max.
 
 |            | Count  | Mean | Std   | Min | 25%  | 50%   | 75%  | Max  |
 |---         |---     |---   |---    |---  |---   |---    |---   |---   |
@@ -143,16 +170,32 @@ This creates a text file named variable_summary.txt where 4 tables summarise sep
 
 ### Visualisation of the Dataset
 #### Histograms
-Histograms are the most commonly used graph to show frequency distributions. 
+Histograms are the most commonly used graph to show frequency distributions. The following attributes are plotted on histograms:
++ Petal length
++ Petal width
++ Sepal length 
++ Sepal width
 ##### Distribution of Petal Length
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Length.png?raw=true)
-Plot 1: Attribute: Petal Length
+Plot 1. Attribute: Petal Length
 ##### Distribution of Petal Width
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Petal%20Width.png?raw=true)
+Plot 2. Attribute: Petal Width
 ##### Distribution of Sepal Length
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Sepal%20Length.png?raw=true)
+Plot 3. Attribute: Sepal Length
 ##### Distribution of Sepal Width
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Sepal%20Width.png?raw=true)
+Plot 4. Attribute: Sepal Width
+
+From the histograms it is clear that the petal length and petal width are defining features for each species particularly *Iris setosa* who's petals are signigificantly shorter than *Iris versicolor* and *Iris virginica*. There is some overlap between *Iris versicolor* and *Iris virginica*. However the overall trend is *Iris setosa* has the smallest petals both in length and width, followed by *Iris versicolor* and *Iris virginica*. When it comes to sepal length it follows a similar trend however there is more overlap between the species and therefore they are harder to differentiate on sepal length alone. With reagrds to sepal width this feature cannot be used to distinguish between the species using a histogram.
+
+#### Scatterplots
+Scatterplots are used to display relationships between two variables. The below scatterplots compare petal length with petal width and sepal length with sepal width.
+##### Petal Length Vs. Petal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Petal%20Length%20Vs%20Petal%20Width.png?raw=true)
+#### Sepal Length Vs. Sepal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Sepal%20Length%20and%20Sepal%20Width.png?raw=true)
 
 References:
 data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv

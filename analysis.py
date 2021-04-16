@@ -14,6 +14,7 @@ iris_data.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_widt
 # Size of the data set
 iris_data['species'].unique()
 print(iris_data.groupby('species').size())
+print(iris_data.info())
 
 # Just some general investigation of the data
 # Find out the min, max, mean, median and std
