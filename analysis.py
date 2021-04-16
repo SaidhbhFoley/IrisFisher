@@ -11,9 +11,10 @@ import os
 iris_data = pd.read_csv("iris_csv.csv")
 iris_data.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
 
-# Size of the data set
+# Exploring the dataset to obtain what species it contains and the number of data points for each species.
 iris_data['species'].unique()
 print(iris_data.groupby('species').size())
+# Ensuring no blanks/missing data
 print(iris_data.info())
 
 # Just some general investigation of the data
@@ -106,26 +107,6 @@ sns.despine()
 plt.savefig('Distribution of Sepal Width')
 plt.clf()
 
-# Heatmap Hist (just an alternative to a scatterplot I did for fun)
-# Heatmap Petal Length vs Petal Width
-sns.set(style="white", rc={'figure.figsize':(11.7,8.27)})
-plt.title("Comparison of Petal Length and Petal Width across the Three Species")
-sns.histplot(data=iris_data, x="petal_length", y="petal_width", hue="species", element="step")
-plt.xlabel("Petal Length (cm)")
-plt.ylabel("Petal Width (cm)")
-sns.despine()
-plt.savefig('Comparison of Petal Length and Petal Width across the Three Species')
-plt.clf()
-# Heatmap Sepal Length vs Sepal Width
-sns.set(style="white", rc={'figure.figsize':(11.7,8.27)})
-plt.title("Comparison of Sepal Length and Sepal Width across the Three Species")
-sns.histplot(data=iris_data, x="sepal_length", y="sepal_width", hue="species", element="step")
-plt.xlabel("Sepal Length (cm)")
-plt.ylabel("Sepal Width (cm)")
-sns.despine()
-plt.savefig('Comparison of Sepal Length and Sepal Width across the Three Species')
-plt.clf()
-
 # Scatterplots
 # Sepal L vs W
 sns.set(style="white", palette="viridis", rc={'figure.figsize':(11.7,8.27)})
@@ -151,3 +132,38 @@ plt.clf()
 sns.set(style="white", rc={'figure.figsize':(11.7,8.27)})
 sns.pairplot(iris_data, hue='species', palette="crest")
 plt.savefig("Pairplot Iris Dataset")
+plt.clf()
+
+# Boxplots (just for fun)
+# Petal Length
+sns.set(style="white", palette="crest", rc={'figure.figsize':(11.7,8.27)})
+sns.boxplot(data=iris_data, x="species", y="petal_length")
+plt.xlabel("Species")
+plt.ylabel("Petal Length (cm)")
+sns.despine()
+plt.savefig('Boxplot Petal Length')
+plt.clf()
+# Petal Width
+sns.set(style="white", palette="crest", rc={'figure.figsize':(11.7,8.27)})
+sns.boxplot(data=iris_data, x="species", y="petal_width")
+plt.xlabel("Species")
+plt.ylabel("Petal Width (cm)")
+sns.despine()
+plt.savefig('Boxplot Petal Width')
+plt.clf()
+# Sepal Length
+sns.set(style="white", palette="crest", rc={'figure.figsize':(11.7,8.27)})
+sns.boxplot(data=iris_data, x="species", y="sepal_length")
+plt.xlabel("Species")
+plt.ylabel("Sepal Length (cm)")
+sns.despine()
+plt.savefig('Boxplot Sepal Length')
+plt.clf()
+# Sepal Width
+sns.set(style="white", palette="crest", rc={'figure.figsize':(11.7,8.27)})
+sns.boxplot(data=iris_data, x="species", y="sepal_width")
+plt.xlabel("Species")
+plt.ylabel("Sepal Width (cm)")
+sns.despine()
+plt.savefig('Boxplot Sepal Width')
+plt.clf()
