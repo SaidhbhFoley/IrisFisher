@@ -112,7 +112,7 @@ plt.clf()
 sns.set(style="white", palette="viridis", rc={'figure.figsize':(11.7,8.27)})
 plt.title("Sepal Length Vs Sepal Width")
 sns.scatterplot(data=iris_data, x="sepal_length", y="sepal_width", hue="species", style="species")
-# Here I added species as hue and style for ease of distinguishing between species
+# Here I added species as hue and style for ease of distinguishing between species, style creates different shapes, combined with hue it makes species identification easier
 plt.xlabel("Sepal Length (cm)")
 plt.ylabel("Sepal Width (cm)")
 sns.despine()
