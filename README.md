@@ -1,8 +1,8 @@
 # IrisFisher
 
-Iris Fisher Data Set Overview
----
-The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.</p>
+## Iris Fisher Data Set Overview
+The Iris flower data set or Fisher's Iris daa set is a multivariate data set. It was first introduced in 1936 in R. A. Fisher's paper *"The use of multiple measurements in taxonomic problems"*. R.A. Fisher was a British statistician and biologist. The dataset contains 50 records of the length and width of sepals and petals (in centimeters) for the three different iris species; *Iris setosa, Iris viginica, Iris versicolor*. Edgar Anderson collected the data on these three species in Quebec, Canada, and due to his collaboration this dataset is also referred to as Anderson's Iris dataset. Anderson collected 50 specimens each on the same day.
+Based on the differences observed amongst the three species, Fisher established a linear discrimiinant model to distinguish the species from one another.</p>
 
 The dataset contains 150 records under 5 characteristics:
 + Sepal length (cm)
@@ -24,8 +24,7 @@ The dataset contains 150 records under 5 characteristics:
 
 <p>Since it's publication it has been widely used in the field of data analytics, and is still used to this day. The Iris Dataset is the best known dataset in pattern recognition literature.</p>
 
-Libraries Utilised
----
+## Libraries Utilised
 Pandas, Matplotlib, Numpy and Seabron were all imported for analysing this dataset.
 
 ### Pandas
@@ -123,8 +122,7 @@ Which produces the following table, summarising the count, mean, standard deviat
  Petal Width | 150.0  | 1.19 | 0.763 | 0.1 | 0.3  | 1.3   | 1.8  | 2.5  |
   
 
-Analysing the Dataset
----
+## Analysing the Dataset
 ### Summary for Each Attribute
 Outputs a summary of each variable to a single text file. The code for this is displayed below:
 ```
@@ -188,18 +186,71 @@ Plot 3. Attribute: Sepal Length
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Distribution%20of%20Sepal%20Width.png?raw=true)
 Plot 4. Attribute: Sepal Width
 
-From the histograms it is clear that the petal length and petal width are defining features for each species particularly *Iris setosa* who's petals are signigificantly shorter than *Iris versicolor* and *Iris virginica*. There is some overlap between *Iris versicolor* and *Iris virginica*. However the overall trend is *Iris setosa* has the smallest petals both in length and width, followed by *Iris versicolor* and *Iris virginica*. When it comes to sepal length it follows a similar trend however there is more overlap between the species and therefore they are harder to differentiate on sepal length alone. With reagrds to sepal width this feature cannot be used to distinguish between the species using a histogram.
+From the histograms it is clear that the petal length and petal width are defining features for each species particularly *Iris setosa* who's petals are signigificantly shorter and narrower than *Iris versicolor* and *Iris virginica*. There is some overlap between *Iris versicolor* and *Iris virginica*. The overall trend is *Iris setosa* has the smallest petals both in length and width, followed by *Iris versicolor* and *Iris virginica*. When it comes to sepal length it follows a similar trend however there is more overlap between the species and therefore they are harder to differentiate on sepal length alone. With regards to sepal width this feature cannot be used to distinguish between the species using a histogram.
 
 #### Scatterplots
 Scatterplots are used to display relationships between two variables. The below scatterplots compare petal length with petal width and sepal length with sepal width.
 ##### Petal Length Vs. Petal Width
 ![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Petal%20Length%20Vs%20Petal%20Width.png?raw=true)
-#### Sepal Length Vs. Sepal Width
-![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Sepal%20Length%20and%20Sepal%20Width.png?raw=true)
+Plot 5. Attribute: Petal Length and Petal Width
 
-References:
-data set obtained from: https://gist.github.com/netj/8836201#file-iris-csv
-https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
-https://pythonbasics.org/seaborn-boxplot/
-https://stackoverflow.com/questions/31594549/how-do-i-change-the-figure-size-for-a-seaborn-plot
-https://seaborn.pydata.org/tutorial/color_palettes.html
+##### Sepal Length Vs. Sepal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Sepal%20Length%20and%20Sepal%20Width.png?raw=true)
+Plot 6. Attribute: Sepal Length and Sepal Width
+
+The scatterplots further illustrate that petal length and width are the distinguishing features for identifying the species of Iris. Particularly for *Iris versicolor* and *Irish virginica* which cannot be distinguished using sepal length and sepal width.
+
+### Some Extra Visualisation of the Dataset (for fun)
+#### Pairplots
+Pairplots are a simple way to visualise relationships between each variable and produce a matrix of relationships between each attribute in the dataset.
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Pairplot%20Iris%20Dataset.png?raw=true)
+Plot 7. Pairplot showing all four attributes for the three species of Iris.
+
+#### Boxplots
+Boxplots are a great way to quickly visualise one attribute at a time and it's quartiles.
+##### Comparison of Petal Length
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Boxplot%20Petal%20Length.png?raw=true)
+Plot 8. Attribute: Petal Length
+##### Comparison of Petal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Boxplot%20Petal%20Width.png?raw=true)
+Plot 9. Attribute: Petal Width
+##### Comparison of Sepal Length
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Boxplot%20Sepal%20Length.png?raw=true)
+Plot 10. Attribute: Sepal Length
+##### Comparison of Sepal Width
+![Alt text](https://github.com/SaidhbhFoley/IrisFisher/blob/main/Boxplot%20Sepal%20Width.png?raw=true)
+Plot 11. Attribute: Sepal Width
+
+The boxplots further signify the best attributes for discriminating between these three species of Iris. Highlighting yet again that petal length and width, and to a lesser degree sepal length, are the attributes to distinguish amongst these three species.
+
+## Conclusion
+The most useful attributes for distinguishing between *Iris setosa*, *Iris versicolor* and *Iris virginica* is petal length and petal width. *I. setosa* is the most easily distinguishable of the three using petal length and petal width, as there is some overlap between *I. versicolor* and *I. virginica*. Sepal length can be used to identify *I. setosa* and to a lesser extent *I. versicolor* and *I. virginica*. Sepal width is not a good attribute for distinguishing these species from one another.
+
+## References:
+[Background on Iris Dataset](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+[Further reading on Iris Dataset](https://www.learnbay.co/data-science-course/blog-post/exploratory-data-analysis-on-iris-dataset/)
+[Data set obtained from](https://gist.github.com/netj/8836201#file-iris-csv)
+[Image of Iris species](https://miro.medium.com/max/2550/1*7bnLKsChXq94QjtAiRn40w.png)
+[Python – Basics of Pandas using Iris Dataset](https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/)
+[Boxplots and Histograms](https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/)
+[Iris Data Visualisation](https://www.kaggle.com/crbelhekar619/iris-dataset-eda-visualization)
+[Exploratory analysis on Iris Dataset](https://medium.com/@sulavojha11/exploratory-data-analysis-on-iris-dataset-84832e519040)
+[Introduction to Seaborn](https://seaborn.pydata.org/introduction.html)
+[Seaborn Scatterplots](https://seaborn.pydata.org/generated/seaborn.scatterplot.html#seaborn.scatterplot)
+[Improving Scatterplots in Seaborn](https://towardsdatascience.com/7-points-to-create-better-scatter-plots-with-seaborn-9f0202fb2ba4)
+[Visualising Statistical Relationships Seaborn](https://seaborn.pydata.org/tutorial/relational.html)
+[Seaborn Histplot](https://seaborn.pydata.org/generated/seaborn.histplot.html)
+[Seaborn Boxplots](https://pythonbasics.org/seaborn-boxplot/)
+[Seaborn Pairplots](https://seaborn.pydata.org/generated/seaborn.pairplot.html)
+[Controlling figure aesthetics Seaborn](http://seaborn.pydata.org/tutorial/aesthetics.html)
+[Editing figure size in Seaborn plot](https://stackoverflow.com/questions/31594549/how-do-i-change-the-figure-size-for-a-seaborn-plot)
+[Seaborn Colour Palettes](https://seaborn.pydata.org/tutorial/color_palettes.html)
+[Customising ticks in Seaborn](https://jakevdp.github.io/PythonDataScienceHandbook/04.10-customizing-ticks.html)
+[Issues with Seaborn graphs overlapping](https://stackoverflow.com/questions/36018681/stop-seaborn-plotting-multiple-figures-on-top-of-one-another)
+[Pandas overview](https://www.earthdatascience.org/courses/intro-to-earth-data-science/scientific-data-structures-python/pandas-dataframes/run-calculations-summary-statistics-pandas-dataframes/)
+[Pandas dataframe](https://www.ritchieng.com/pandas-selecting-multiple-rows-and-columns/)
+[Github Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Further Github Markdown Formatting](https://docs.github.com/en/github/writing-on-github/organizing-information-with-tables)
+[How to add images to Github](https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github)
+[Github italics issue](https://github.com/madskristensen/MarkdownEditor/issues/68)
+
