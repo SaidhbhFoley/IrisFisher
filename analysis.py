@@ -69,10 +69,11 @@ sns.set_style("ticks")
 # Addition of ticks to the y-axis
 plt.title("Distribution of Petal Length")
 # Setting the title of the plot
-sns.histplot(data=iris_data, x="petal_length", hue="species", palette="viridis", element="step", multiple="dodge", shrink=.8)
+sns.histplot(data=iris_data, x="petal_length", hue="species", palette="viridis", element="step", multiple="dodge", shrink=.8, legend=False)
 # Selecting the dataset and looking at petal length only, the hue means all species will be coloured differently, then some general formatting of the hist
 plt.xlabel("Petal Length (cm)")
 # Setting the x-label
+plt.legend(title="Species",loc='upper left', labels=['Iris setosa', "Iris versicolor", 'Iris virginica'])
 sns.despine()
 # Removing the top and right lines to make the graph more visually appealing
 plt.savefig('Distribution of Petal Length')
